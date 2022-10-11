@@ -36,11 +36,10 @@ func TestTemplate(t *testing.T) {
 		},
 
 		Config: Config{
-			WebhookID:    os.Getenv("WEBHOOK_ID"),
-			WebhookToken: os.Getenv("WEBHOOK_TOKEN"),
-			Message:      []string{"test one message from drone testing", "test two message from drone testing"},
-			File:         []string{"./images/discord-logo.png"},
-			Drone:        true,
+			WebhookURL: os.Getenv("WEBHOOK_URL"),
+			Message:    []string{"test one message from drone testing", "test two message from drone testing"},
+			File:       []string{"./images/discord-logo.png"},
+			Drone:      true,
 		},
 
 		Payload: Payload{
@@ -94,10 +93,9 @@ func TestTemplate(t *testing.T) {
 func TestDefaultTemplate(t *testing.T) {
 	plugin := Plugin{
 		Config: Config{
-			WebhookID:    os.Getenv("WEBHOOK_ID"),
-			WebhookToken: os.Getenv("WEBHOOK_TOKEN"),
-			Message:      []string{"default message 1", "default message 2"},
-			Color:        "#48f442",
+			WebhookURL: os.Getenv("WEBHOOK_URL"),
+			Message:    []string{"default message 1", "default message 2"},
+			Color:      "#48f442",
 		},
 
 		Payload: Payload{

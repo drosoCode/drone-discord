@@ -56,8 +56,7 @@ There are three ways to send notification.
 
 ```bash
 drone-discord \
-  --webhook-id xxxx \
-  --webhook-token xxxx \
+  --webhook-url xxxx \
   --message "Test Message"
 ```
 

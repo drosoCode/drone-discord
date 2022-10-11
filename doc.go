@@ -9,8 +9,7 @@
 // Send Notification
 //
 //   drone-discord \
-//     --webhook-id xxxx \
-//     --webhook-token xxxx \
+//     --webhook-url xxxx \
 //     --username value \
 //     --avatar-url value \
 //     --message "Test Message"
